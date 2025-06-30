@@ -57,12 +57,11 @@ if (strlen($customerFirstName) > 6) {
     $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
 }
 
-/*
-My Debugging Log:
+/*My Debugging Log:
 In part A I two things that I fixed, one was the the customer firstname discount I forgot to put the condition
 where it had to be more than six letters so it would always add the discount. Also I put two seperate if statemnents
 for the colors which made it long so in the refactroed version I used logical OR operator to check both conditions, which 
-cleaned up the code.
+cleaned up the code.*/
             
 
 
