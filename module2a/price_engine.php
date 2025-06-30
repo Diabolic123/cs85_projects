@@ -57,6 +57,11 @@ if ($isCustomized) {
     }
 }
 
+if (strlen($customerFirstName) > 6) {
+    $finalPrice -= 1.00;
+    $details .= "<li>Long Name Discount: <span>-$1.00</span></li>";
+}
+
 
             // Your nested if-statement logic goes here...
             // Example of a rule:
