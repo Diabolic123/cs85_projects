@@ -45,6 +45,11 @@ if ($color == 'Ocean Blue') {
     $details .= "<li>Premium Color (Ocean Blue): <span>+$2.00</span></li>";
 }
 
+if ($isCustomized) {
+    $finalPrice += 5.00;
+    $details .= "<li>Customization Fee: (true) <span>+$5.00</span></li>";
+}
+
 
             // Your nested if-statement logic goes here...
             // Example of a rule:
