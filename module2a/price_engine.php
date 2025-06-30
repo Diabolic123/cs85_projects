@@ -17,7 +17,7 @@
         <h1>Order Summary</h1>
         <?php
             // --- Configuration: Change these values to test all business rules! ---
-            $size = 'M'; // Options: 'S', 'M', 'L', 'XL'
+            $size = 'L'; // Options: 'S', 'M', 'L', 'XL'
             $color = 'Ocean blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
             $isCustomized = true; // Options: true, false
             $customerFirstName = 'Nicholas'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
@@ -25,6 +25,12 @@
             // --- Part A: Implement the logic below using ONLY simple, nested if-statements ---
             $finalPrice = 22.50;
             $details = "<li>Base Price: <span>$" . number_format($finalPrice, 2) . "</span></li>";
+
+            if ($size == 'L') {
+    $finalPrice += 1.75;
+    $details .= "<li>Size (L) Upcharge: <span>+$1.75</span></li>";
+}
+
 
             // Your nested if-statement logic goes here...
             // Example of a rule:
