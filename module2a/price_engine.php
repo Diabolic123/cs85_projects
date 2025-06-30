@@ -18,7 +18,7 @@
         <?php
             // --- Configuration: Change these values to test all business rules! ---
             $size = 'XL'; // Options: 'S', 'M', 'L', 'XL'
-            $color = 'Ocean blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
+            $color = 'Ocean Blue'; // Any string, but test with 'Sunset Orange' or 'Ocean Blue'
             $isCustomized = true; // Options: true, false
             $customerFirstName = 'Nicholas'; // <-- IMPORTANT: REPLACE WITH YOUR ACTUAL FIRST NAME
 
@@ -36,6 +36,14 @@ if ($size == 'XL') {
     $details .= "<li>Size (XL) Upcharge: <span>+$2.50</span></li>";
 }
 
+if ($color == 'Sunset Orange') {
+    $finalPrice += 2.00;
+    $details .= "<li>Premium Color (Sunset Orange): <span>+$2.00</span></li>";
+}
+if ($color == 'Ocean Blue') {
+    $finalPrice += 2.00;
+    $details .= "<li>Premium Color (Ocean Blue): <span>+$2.00</span></li>";
+}
 
 
             // Your nested if-statement logic goes here...
